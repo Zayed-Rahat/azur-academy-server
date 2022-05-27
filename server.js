@@ -19,7 +19,7 @@ mongoose
   .then(() => console.log("DB CONNECTED"))
   .catch((err) => console.log("DB CONNECTION ERR", err));
 
-// middlewares
+/* // middlewares
 app.use(morgan("dev"));
 app.use(bodyParser.json({ limit: "2mb" }));
 app.use(cors());
@@ -28,11 +28,12 @@ app.use(cors());
 readdirSync("./routes").map((r) => app.use("/api", require("./routes/" + r)));
 
 // port
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8000; */
 
 //step heroku
 /* if(process.env.NODE_ENV=="production"){
   app.use(express.static("client/build"));
 } */
 
-app.listen(port, () => console.log(`Server is running on port ${port}`));
+/* app.listen(port, () => console.log(`Server is running on port ${port}`));
+ */
