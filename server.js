@@ -19,11 +19,11 @@ mongoose
   .then(() => console.log("DB CONNECTED"))
   .catch((err) => console.log("DB CONNECTION ERR", err));
 
-/* // middlewares
+// middlewares
 app.use(morgan("dev"));
 app.use(bodyParser.json({ limit: "2mb" }));
 app.use(cors());
-
+/* 
 // routes middleware
 readdirSync("./routes").map((r) => app.use("/api", require("./routes/" + r)));
 
@@ -35,5 +35,4 @@ const port = process.env.PORT || 8000; */
   app.use(express.static("client/build"));
 } */
 
-/* app.listen(port, () => console.log(`Server is running on port ${port}`));
- */
+app.listen(port, () => console.log(`Server is running on port ${port}`));
