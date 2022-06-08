@@ -43,10 +43,10 @@ const productSchema = new mongoose.Schema(
       type: Number,
       default: 0,
     },
-    images: {
-      type: Array,
-    },
-    shipping: {
+    // images: {
+    //   type: Array,
+    // },
+/*     shipping: {
       type: String,
       enum: ["Yes", "No"],
     },
@@ -57,7 +57,7 @@ const productSchema = new mongoose.Schema(
     brand: {
       type: String,
       enum: ["Apple", "Samsung", "Microsoft", "Lenovo", "ASUS"],
-    },
+    }, */
     // ratings: [
     //   {
     //     star: Number,
